@@ -3,9 +3,48 @@ body{
     background-image: url('bkg.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: lighten;
+    max-width: 100%;
+    height: auto;
 }
 
+.quote{
+    color: aliceblue;
+     padding-top: 10%; 
+     padding-bottom: 10%;
+     padding-right: 10%;
+     padding-left: 20px;
+     font-size: 30px;
+}
+.header-tab{
+    color: aquamarine;
+    background-color: none;
+    display: flex;
+}
 
-myClass{
+.header-tab > .menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 500px;
+    margin: 0.5% auto;
+}
+
+.ud{
+    margin: 0.5%
+    padding: 10px;
+}
+.course-button{
+    padding: 5px;
+    margin: 0.5%;
+    color: aliceblue;
+    background-color: rgb(212, 127, 127);
+    background-blend-mode: lighten;
+}
+
+.features-plate{
+    display: flex;
+    background-color: aliceblue;
+    width: 30%;
     
 }
