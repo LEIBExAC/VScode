@@ -1,12 +1,193 @@
+/*  Will have to redesign the whole page
+*   start from re-difing background image
+*   and get new parts for new updated one in html part
+*/
+/*1st is to take out all which need flex property*/
+
+@media (min-width: 400px) {
+    :root {
+    --bg: #6b4343;
+    --col: #111;
+    --heading: #2ec2e0;
+    --subheading: #0d86d9;
+    --links: #0d86d9;
+    }
+}
+
+@media screen and (min-width: 500px) {
+  .top-image{
+    background-image: url("bkg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-clip: padding-box;
+    overflow-x: hidden;
+    display: inline-block;
+
+  }
+  
+}
 
 body{
-    background-image: url('bkg.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(190, 231, 241, 0.55);
     background-blend-mode: lighten;
-    max-width: 100%;
-    height: auto;
 }
+
+/*test purpose*/
+.main-view{
+  background-color: #2ec2e0;
+  border: 20px solid rgb(224, 29, 29);
+  overflow-y: hidden;
+}
+
+.header-tab, .menu{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  justify-content: center;
+}
+
+.menu{
+  margin-left: 2%;
+}
+
+.ud{
+  width: fit-content;
+  height: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 5% auto;
+}
+
+.button-part{
+  float: right;
+}
+
+a:link{
+  color: blue;
+  text-decoration: none;
+}
+.home-link{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  margin-top: 1%;
+  margin-left: 1%;
+  background-color: #e7cabb70;
+
+}
+/*Button part*/
+.btn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+  }
+  
+  /*Button part*/
+  .btn {
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+    box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  .btn:active {
+    opacity: 0.5;
+  }
+
+  /*Course tab*/
+  .courses-tab{
+    margin-left: 0.5%;
+    width: 770px;
+    height: 270px;
+    background-color: azure;
+    justify-content: center;
+    border: 1px solid rgb(148, 12, 238);
+    border-radius: 1rem;
+  }
+
+  .inner-course-tab{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 8px 14px 0 rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+    position: relative;
+    height: 100%;
+    margin: 1%;
+    }
+
+
+  /*Flip card*/
+  .flip-card {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+       rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+       bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+/*
+body{
+    max-width: 100%;
+} 
 
 .home-link, a:link{
     margin-top: 3%;
@@ -65,3 +246,9 @@ body{
     width: 30%;
     margin: 10px;
 }
+
+.features-plate > p{
+    padding: 2%;
+    margin: 2%;
+}
+*/

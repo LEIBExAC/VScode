@@ -1,66 +1,158 @@
 <!DOCTYPE html>
 <html>
- <head>
-    <base href="" target="_blank">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>
-        Unique Learning
-    </title>
+    <head>
+        <base href="" target="_blank">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Unique Learning
+        </title>
+    </head>
 
- </head>
+    <body>
+        <!--Main complete div all other div's are in it,
+       this will control arrangement of all other div-->
+       <div class="main-view home ">
+          
+               <!--The below one contains the image in background part,
+               it will have the Logo, Home Tab, Join Now button, tag line, Explore cousre and
+                Features of our website-->
+           <div class="top-image bk-img top-div">
+               <!--Header tab which will have Logo at top left and 
+                   home, about, contact, courses button-->
+               <div class="header-tab">
+   
+                 <div class="logo home-link ">
+                   <a href="home.html" title="Go to Unique Learning">
+                     UNIQUE LEARNING |||
+                    </a>
+                    </div>
+   
+                   <div class="menu">
+                        <div class="logo ud">
+                           <a href="/home.html" title="Home">
+                            HOME
+                            </a>
+                        </div>
+                        <div class="logo ud">
+                           <a href="" title="About Us">
+                            ABOUT
+                           </a>
+                       </div>
+                       <div class="logo ud">
+                           <a href="" title="Our Courses">
+                           COURSES
+                           </a>
+                       </div>
+                       <div class="logo ud">
+                           <a href="" title="Contact Us">
+                           CONTACT
+                        </a>
+                       </div>
+                   </div>
+   
+                   <!--Join now button-->
+                   <div class="button-part">
+                       <button type="button" class="btn" onclick="login()">
+                           Join Now
+                       </button>
+                   </div> 
+               </div>
+   
+               <!--Our tag line to be displyed here-->
+               <div class="tag-line">
+                   <h2>
+                       THE BEST<br>
+                       WAY FOR<br>
+                       YOUR<br>
+                       LEARNING!
+                   </h2>
+   
+                   <!--Courses page button-->
+                   <div>
+                       <button class="course-button" type="button" title="Explorer our courses">
+                           EXPLORER COURSES
+                       </button>
+                   </div>
+               </div>
+               
+               <!--Features tab is here-->
+               <div class="features-plate">
+                   <p>ONLINE TUTORING</p>
+                   <p>LIFETIME ACCESS</p>
+                   <p>ACTIVE LEARNING</p>
+               </div>
+           </div><!--Bg img div-->
 
- <body>
-    <div class="header-tab">
-       <div class="logo home-link "><a href="/home.html" title="Go to Unique Learning">
-        UNIQUE LEARNING|||
-       </a></div>
-       <div class="menu">
-         <div class="logo ud"><a href="/home.html" title="Home">
-          HOME
-         </a></div>
+           <!--Course tab-->
+           <div class="part2-of-page-for-now">
+            <div class="c1">
+                <h4 id="p1">MOST POPULAR COURSES</h4>
+            </div>
 
-         <div class="logo ud"><a href="" title="About Us">
-          ABOUT
-         </a></div>
+            <div class="courses-tab available-courses">
+                <div class="inner-course-tab">
 
-         <div class="logo ud"><a href="" title="Our Courses">
-          COURSES
-         </a></div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p class="title" id="course1-front">course 1</p>
+                                <p>Hover Me</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title" id="course1-back">BACK</p>
+                                <p>Leave Me</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p class="title" id="course2-front">Course 2</p>
+                                <p>Hover Me</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title" id="course2-back">BACK</p>
+                                <p>Leave Me</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p class="title" id="course3-front">Course 3</p>
+                                <p>Hover Me</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title" id="course3-back">BACK</p>
+                                <p>Leave Me</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p class="title" id="course4-front">Course 4</p>
+                                <p>Hover Me</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title" id="course4-back">Course 4 Back</p>
+                                <p>Leave Me</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
 
-         <div class="logo ud"><a href="" title="Contact Us">
-         CONTACT
-         </a></div>
-       </div>
+           </div><!--No-bg div-->
 
+       </div><!--Complete div-->
 
-       <button type="button" class="join" >Join Now</button> 
-    </div>
-
-    <div class="quote">
-        <h2>
-            THE BEST<br>
-            WAY FOR<br>
-            YOUR<br>
-            LEARNING!
-        </h2>
-        <div>
-            <button class="course-button" type="button" title="Explorer our courses">
-                EXPLORER COURSES
-            </button>
-        </div>
-    </div>
-
-
-
-    <div class="features-plate">
-        <p>ONLINE TUTORING</p>
-        <p>LIFETIME ACCESS</p>
-        <p>ACTIVE LEARNING</p>
-    </div> 
-
-
-       
- </body>
-
+       <script src="script.js">
+        
+       </script>
+   </body>   
 </html>
