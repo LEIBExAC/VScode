@@ -3,16 +3,16 @@
     <head>
         <base href="" target="_blank">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
         <title>
             Unique Learning
         </title>
     </head>
 
     <body>
-        <!--Main complete div all other div's are in it,
+        <!--Main wrapper div all other div's are in it,
        this will control arrangement of all other div-->
-       <div class="main-view home">
+       <div class="main-view home" id="page-wrapper">
           
                <!--The below one contains the image in background part,
                it will have the Logo, Home Tab, Join Now button, tag line, Explore cousre and
@@ -46,11 +46,12 @@
                     </div>
                    </div>
    
-                   <!--Join now button-->
-                   <div class="button-part">
-                       <button type="button" class="btn" onclick="login()">
-                           SgnUp/SignIn
-                       </button>
+                   <!--User Profile icon image cuurently in png format I'm not an expert for this 
+                     but I've tried to post a user detailed page link-->
+                   <div class="user-profile user ><a class="profile-link" href="#home">
+                    <span id="user-name" style="padding: 10px;">Hello User</span>
+                    <img id="profile-img" src="../assests/profile.png" alt="User" style="height: 45px; width: 45px;">
+                     </a>
                    </div> 
                </div>
    
@@ -66,7 +67,7 @@
                    <!--Courses page button-->
                    <div>
                        <button class="course-btn" type="button" title="Explorer our courses">
-                           EXPLORER COURSES
+                           MY COURSES
                        </button>
                    </div>
                </div>
@@ -88,7 +89,7 @@
            <!--Course tab-->
            <div class="part2-of-page-for-now">
             <div class="c1">
-                <h4 id="p1">MOST POPULAR COURSES</h4>
+                <h4 id="p1">RECENT COURSES</h4>
             </div>
 
             <div class="courses-tab available-courses">
@@ -150,7 +151,7 @@
 
            </div><!--No-bg div-->
 
-       </div><!--Complete div-->
+       </div><!--Wrraper div-->
 
        <script src="script.js">
         
