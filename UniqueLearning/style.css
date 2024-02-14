@@ -318,7 +318,7 @@ grid-row: 1 / 2;
 -ms-grid-column: 1;
 -ms-grid-column-span: 7;
 grid-column: 1 / 8;
-width: 100vw;
+width: 100w;
 height: 25.25rem;
 display: -webkit-box;
 display: -ms-flexbox;
