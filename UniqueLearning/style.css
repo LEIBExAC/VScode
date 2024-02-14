@@ -56,6 +56,7 @@ position: relative;
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
+flex-wrap: wrap;
 -webkit-box-orient: horizontal;
 -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -266,6 +267,8 @@ justify-items: center;
 */
 
 .courses-tab{
+  display: grid;
+  grid-template-rows: 500px 100px;
   align-items: center;
   justify-items: center;
 }
