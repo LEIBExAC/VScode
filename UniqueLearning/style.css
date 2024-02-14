@@ -1,8 +1,4 @@
-/*  Will have to redesign the whole page
-*   start from re-difing background image
-*   and get new parts for new updated one in html part
-*/
-/*1st is to take out all which need flex property*/
+
 
 /*
 * Prefixed by https://autoprefixer.github.io
@@ -23,19 +19,46 @@
   }
 }
 
+@media screen and (max-width: 600px){
+  .top-image{
+    background-image: url("assests/bkg.jpg");
+    width: 100vw;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+    overflow-x: hidden;
+    background-position: center;
+
+  }
+
+  .features-tab{
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    background-color: white;
+    width: fit-content;
+    position: relative;
+    top: 10%;
+    margin-bottom: 1.25rem;
+  }
+}
+
 @media screen and (min-width: 31.25rem) {
 .top-image{
   background-image: url("assests/bkg.jpg");
   width: 100vw;
   height: 100vh;
-  /*background-image: linear-gradient(135deg, #4ccf249c 0%, #ea5455 100%);*/
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: padding-box;
   overflow-x: hidden;
-  display: inline-block;
+
+
   background-position: center;
 }
+
+
 
 }
 
@@ -44,14 +67,9 @@ body{
   background-blend-mode: lighten;
 }
 
-/*test purpose*/
-.main-view{
-background-color: #2ec2e0;
-/* border: 20px solid rgb(224, 29, 29);*/
-overflow-y: hidden;
-position: relative;
-}
 
+
+/*Impliment media querie to remove -webkit-box and flex property and impliment none for min display sizes*/
 .header-tab, .menu{
 display: -webkit-box;
 display: -ms-flexbox;
@@ -65,6 +83,12 @@ margin-top: 1%;
 -webkit-box-pack: center;
     -ms-flex-pack: center;
         justify-content: center;
+}
+
+@media screen and (max-width:593px) {
+  .menu{
+    display: none;
+  }
 }
 
 .menu{
@@ -125,7 +149,7 @@ display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
  position: absolute;
- right: 1.25rem;
+ right: 2.25rem;
  top: 0.9375rem;
 }
 
@@ -234,14 +258,16 @@ h2{
  }
 
  /*fetures-tab*/
+
+
+
+/*change it for the small deices and other things are fixed*/
  .features-tab{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-shrink: 2;
   background-color: white;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
   position: relative;
   top: 10%;
   margin-bottom: 1.25rem;
@@ -249,6 +275,16 @@ h2{
 
  .ft{
   padding: 1.5625rem;
+  flex-shrink: 2;
+ }
+
+ @media screen and(max-width: 600px) {
+  .features-tab{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
  }
 
 
@@ -273,6 +309,8 @@ justify-items: center;
   justify-items: center;
 }
 
+
+
 main#carousel {
 -ms-grid-row: 1;
 -ms-grid-row-span: 1;
@@ -281,7 +319,7 @@ grid-row: 1 / 2;
 -ms-grid-column-span: 7;
 grid-column: 1 / 8;
 width: 100vw;
-height: 31.25rem;
+height: 25.25rem;
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
