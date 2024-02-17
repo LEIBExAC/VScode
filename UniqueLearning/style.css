@@ -33,15 +33,20 @@
   }
 
   .features-tab{
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     flex-shrink: 2;
     background-color: white;
-    width: fit-content;
+    width: 60%;
     position: relative;
     top: 10%;
     margin-bottom: 1.25rem;
   }
+
+  .ft{
+    padding: 0.5625rem;
+    flex-shrink: 2;
+   }
 }
 
 @media screen and (min-width: 31.25rem) {
@@ -58,8 +63,21 @@
   background-position: center;
 }
 
+.features-tab{
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+  background-color: white;
+  width: auto;
+  position: relative;
+  top: 10%;
+  margin-bottom: 1.25rem;
+}
 
-
+.ft{
+  padding: 1.5625rem;
+  flex-shrink: 2;
+ }
 }
 
 body{
@@ -107,9 +125,12 @@ padding-right: 1,25rem;
 margin: 5% auto;
 }
 
-.button-part{
-float: right;
-overflow-x: hidden;
+@media screen and(max-width: 364px) {
+  .button-part{
+    float: right;
+    overflow-x: hidden;
+    }
+  
 }
 
 a:link{
@@ -214,7 +235,7 @@ font-size: medium;
 
 h2{
   color: white;
-  font-size: 2.1875;
+  font-size: 2.1875rem;
 }
 
 /*Exploer course button*/
@@ -262,28 +283,39 @@ h2{
 
 
 /*change it for the small deices and other things are fixed*/
- .features-tab{
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-shrink: 2;
-  background-color: white;
-  width: auto;
-  position: relative;
-  top: 10%;
-  margin-bottom: 1.25rem;
- }
+@media screen and(min-width: 601px) {
+  .features-tab{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    background-color: white;
+    width: auto;
+    position: relative;
+    top: 10%;
+    margin-bottom: 1.25rem;
+   }
+   
+   .ft{
+    padding: 1.5625rem;
+    flex-shrink: 2;
+   }
+  
+}
 
- .ft{
-  padding: 1.5625rem;
-  flex-shrink: 2;
- }
+
 
  @media screen and(max-width: 600px) {
   .features-tab{
     display: inline-flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 60%;
+    background-color: white;
+    position: relative;
+    top: 10%;
+    margin-bottom: 1.25rem;
   }
+
+
   
  }
 
@@ -302,14 +334,7 @@ justify-items: center;
 }
 */
 
-.courses-tab{
-  display: grid;
-  grid-template-rows: 500px 100px;
-  align-items: center;
-  justify-items: center;
-}
-
-
+/*Courses tab*/
 
 main#carousel {
 -ms-grid-row: 1;
@@ -318,8 +343,8 @@ grid-row: 1 / 2;
 -ms-grid-column: 1;
 -ms-grid-column-span: 7;
 grid-column: 1 / 8;
-width: 100w;
-height: 25.25rem;
+width: auto;
+height: 80vh;
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
@@ -339,6 +364,25 @@ overflow: hidden;
 --position: 1;
 pointer-events: none;
 }
+
+div.c1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2rem;
+}
+
+div.c1 h4{
+  font-size: 2.5rem;
+  
+}
+
+div.c1 p{
+ font-family: 'Times New Roman', Times, serif;
+ display: flex;
+}
+
+
 
 /*Part of Carousel*/
 div.item {
