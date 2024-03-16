@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  section {
+    flex: 1;
+    margin: 0 20px 20px 0;
+  }
+  
+  #courses-list {
+    order: 1;
+    width: 100%;
+  }
+  
+  #course-content {
+    order: 2;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    section {
+      flex: 100%;
+    }
+  }
