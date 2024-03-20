@@ -1,0 +1,8 @@
+.course-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
