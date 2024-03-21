@@ -7,35 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empty Course Page</title>
     <link rel="stylesheet" href="cpage.css">
+    
 </head>
 <body>
     <!--Make sure to add comments from now 
         on to specify what you are actually trying to do, 
         I am changing some layouts this time-->
     <header id="head">
-        <div class="header-tab head">
+
+        <div id="unique"><h1> Uniue Learning |||</h1></div>
+
+        <div id="navbara" class="header-tab head">
             <!--Head tab elements here-->
+            <nav class="menu-panel navbar">
+
+                <ul>
+                    <li><a href="../Home.html">Home</a></li>
+                    <li><a href="./course_page.html">Courses</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                </ul>
+
+                <div class="serach-course serc">
+                    <form action="">
+                        <input type="text" placeholder="Search Course" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </form>
+                </div>
+            </nav>
+
         </div>
     </header>
 
+    <section class="main-body">
     <!--Section will have 2 parts, this one is for desktop design 
     so we have a side panel in left and the right portion will have the courses on 
     display-->
-    <section class="left-sec">
-        <div class="left-panel sec-left">
-
+    <section id="sidenava" class="left-sec">
+        <div class="left-panel sec-left sidenav">
+            <ul>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Course</a></li>
+            </ul>
         </div>
     </section>
+
     <section class="courses-display">
-        <div class="c-d">
+        <div class="c-d main">
             <!--Course are in this container, the code is in js-->
             <div id="courses-container"></div>
         </div>
     </section>
     
+</section>
 
-    <script src="cpage.js">
-
-    </script>
+<footer class="contact">
+    <!--about us here-->
+    <h2>Contact US</h2>
+</footer>
+    <script src="cpage.js"></script>
 </body>
 </html>
