@@ -38,3 +38,7 @@ function navbarFunc() {
     navbar.classList.remove("sticky");
   }
 }
+
+document.querySelector("html").addEventListener("click", function () {
+  alert("Ouch! Stop poking me!");
+});
