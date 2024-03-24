@@ -13,6 +13,13 @@ courses.forEach(course => {
     coursesContainer.appendChild(courseBox);
 });
 
+function linkCourse(){
+ coursesContainer.classList.add("")
+}
+
+coursesContainer.onclick = () => {
+  linkCourse();
+};
 
 //Sticky effect of nav bar
 window.onscroll = function() {navbarFunc()};
@@ -39,6 +46,27 @@ function navbarFunc() {
   }
 }
 
-document.querySelector("html").addEventListener("click", function () {
-  alert("Ouch! Stop poking me!");
-});
+
+/*Test */
+
+let myButton = document.getElementById("test");
+let myHeading = document.querySelector("h1");
+
+function setUserName() {
+  const myName = prompt("Please enter your name.");
+  localStorage.setItem("name", myName);
+  myHeading.textContent = `Mozilla is cool, ${myName}`;
+}
+function setUserName() {
+  const myName = prompt("Please enter your name.");
+  if (!myName) {
+    setUserName();
+  } else {
+    localStorage.setItem("name", myName);
+    myHeading.textContent = `Mozilla is cool, ${myName}`;
+  }
+}
+
+myButton.onclick = () => {
+  setUserName();
+};

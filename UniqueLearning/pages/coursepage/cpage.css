@@ -37,6 +37,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
   }
   
   .sticky + .main-body {
@@ -166,6 +167,7 @@ body{
     top: auto;
     background-color: rgb(219, 236, 236);
     overflow-y: scroll;
+    z-index: 1;
 }
 
 .sidenav ul{
@@ -220,10 +222,17 @@ body{
 
   /*Course part is here*/
   .course-box {
+    background-image: url(../images/OIP.jpeg);
+    background-size: cover;
+    border: 2px solid #d48383;
     width: 180px;
     height: 100px;
     background-color: lightblue;
     margin: 10px;
     padding: 10px;
     display: inline-block;
+    text-align: center;
+}
+
+.cbox{
 }
