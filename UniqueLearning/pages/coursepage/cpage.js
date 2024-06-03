@@ -1,6 +1,7 @@
 
 //Initially I planned to leave it as it is but, now I'm thinking to impliment it through HTML
 //We only have to change the inside content of the Course box instead of chnaging the box itself
+//Maybe we can go using js
 const courses = ['Course 1', 'Course 2', 'Course 3','course 4', 'course 5', 'course 6', 'course 7',
  'course 8'];
 
@@ -46,27 +47,14 @@ function navbarFunc() {
   }
 }
 
+var scrc = document.getElementsByClassName("serc");
 
-/*Test */
-
-let myButton = document.getElementById("test");
-let myHeading = document.querySelector("h1");
-
-function setUserName() {
-  const myName = prompt("Please enter your name.");
-  localStorage.setItem("name", myName);
-  myHeading.textContent = `Mozilla is cool, ${myName}`;
-}
-function setUserName() {
-  const myName = prompt("Please enter your name.");
-  if (!myName) {
-    setUserName();
-  } else {
-    localStorage.setItem("name", myName);
-    myHeading.textContent = `Mozilla is cool, ${myName}`;
+function search_impliment(course_name){
+  if(course_name === cList[i]){
+    for(i = 0;;){
+      let a = 10;
+    }
   }
-}
 
-myButton.onclick = () => {
-  setUserName();
-};
+}
+/*Test */
