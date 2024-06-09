@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch Specific Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Branch Specific Search</h1>
+    <form id="search-form">
+        <select name="branch" id="branch-select">
+            <option value="">Select Branch</option>
+            <option value="electronics">Electronics and Communication Engineering</option>
+            <option value="automobile">Automobile Engineering</option>
+            <option value="mechanical">Mechanical Engineering</option>
+            <option value="chemical">Chemical Engineering</option>
+            <option value="electrical">Electrical Engineering</option>
+            <option value="civil">Civil Engineering</option>
+            <option value="computer">Computer Science and Engineering</option>
+            <option value="agricultural">Agricultural Engineering</option>
+        </select>
+        <input type="text" name="keyword" id="keyword" placeholder="Search Keyword">
+        <button type="submit">Search</button>
+    </form>
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
