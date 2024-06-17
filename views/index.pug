@@ -1,0 +1,113 @@
+doctype html
+head
+  base(href='' target='_blank')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/stylesheets/style.css')
+  script(src='/javascripts/home.js' async)
+  title
+    | Unique Learning
+//
+  Main complete div all other div's are in it,
+  this will control arrangement of all other div
+.main-view.home
+  //
+    The below one contains the image in background part,
+    it will have the Logo, Home Tab, Join Now button, tag line, Explore cousre and
+    Features of our website
+  .top-image.bk-img.top-div
+    //
+      Header tab which will have Logo at top left and
+      home, about, contact, courses button
+      add Online Tutoring
+    .header-tab
+      .logo.home-link
+        a(href='home.html' title='Go to Unique Learning')
+          b  UNIQUE LEARNING |||
+      .menu
+        .logo.ud
+          a(href='home.html' title='Home')
+            | HOME
+        .logo.ud
+          a(href='' title='Our Courses')
+            | COURSES
+        .logo.ud
+          a(href='pages/about.html' title='About Us')
+            | ABOUT
+      if user
+        .login-page-redirect
+          p user.username
+      
+      else 
+        // Join now button
+        .login-page-redirect
+        a#login.btn(href='/login' target='_self')
+          | Log In
+
+    // Our tag line to be displyed here
+    .tag-line
+      h2
+        | THE BEST
+        br
+        |                        WAY FOR
+        br
+        |                        YOUR
+        br
+        |                        LEARNING!
+      // Courses page button
+      div
+        button.course-btn(type='button' title='Explorer our courses')
+          | EXPLORER COURSES
+    // Features tab is here
+    .features-tab
+      span.ft
+        p ONLINE TUTORING
+      span.ft
+        p ACTIVE LEARNING
+      span.ft
+        p LIFETIME ACCESS
+  // Bg img div
+  // Courses slides/Carousel tab
+  .carousel
+    .c
+      h4#popular-course MOST POPULAR COURSES
+    .courses-tab.available-courses(style='display: grid;')
+      input(type='radio' name='position')
+      input(type='radio' name='position')
+      input(type='radio' name='position' checked='')
+      input(type='radio' name='position')
+      input(type='radio' name='position')
+      main#carousel
+        .item
+          .c1
+            h4#course-name
+              | Course 1
+            p#course-brief
+              | Description
+        .item
+          .c1
+            h4#course-name
+              | Course 2
+            p#course-brief
+              | Description
+        .item
+          .c1
+            h4#course-name
+              | Course 3
+            p#course-brief
+              | Description
+        .item
+          .c1
+            h4#course-name
+              | Course 4
+            p#course-brief
+              | Description
+        .item
+          .c1
+            h4#course-name
+              | Course 5
+            p#course-brief
+              | Description
+        main
+  // No-bg div
+// Complete div
+

@@ -1,0 +1,557 @@
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+/*use rem/em instead of px*/
+
+*, ::after, ::before{
+  box-sizing: border-box;
+}
+
+@media (min-width: 25rem) {
+  :root {
+  --bg: #6b4343;
+  --col: #111;
+  --heading: #2ec2e0;
+  --subheading: #0d86d9;
+  --links: #0d86d9;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .top-image{
+    width: 100vw;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+    overflow-x: hidden;
+    background-position: center;
+
+  }
+
+  .features-tab{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    background-color: white;
+    width: 60%;
+    position: relative;
+    top: 10%;
+    margin-bottom: 1.25rem;
+  }
+
+  .ft{
+    padding: 0.5625rem;
+    flex-shrink: 2;
+   }
+}
+
+@media screen and (min-width: 31.25rem) {
+.top-image{
+
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  overflow-x: hidden;
+
+
+  background-position: center;
+}
+
+.features-tab{
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+  background-color: white;
+  width: auto;
+  position: relative;
+  top: 10%;
+  margin-bottom: 1.25rem;
+}
+
+.ft{
+  padding: 1.5625rem;
+  flex-shrink: 2;
+ }
+}
+
+body{
+  background-color: rgba(190, 231, 241, 0.55);
+  background-blend-mode: lighten;
+}
+
+
+
+/*Impliment media querie to remove -webkit-box and flex property and impliment none for min display sizes*/
+.header-tab, .menu{  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: "Dosis", sans-serif;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+flex-wrap: wrap;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+margin-top: 1%;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+@media screen and (max-width:593px) {
+  .menu{
+    display: none;
+  }
+}
+
+.menu{
+margin-left: 2%;
+}
+
+.ud{
+width: -webkit-fit-content;
+width: -moz-fit-content;
+width: fit-content;
+height: -webkit-fit-content;
+height: -moz-fit-content;
+height: fit-content;
+padding-left: 1.25rem;
+padding-right: 1,25rem;
+margin: 5% auto;
+}
+
+@media screen and(max-width: 364px) {
+  .button-part{
+    float: right;
+    overflow-x: hidden;
+    }
+  
+}
+
+a:link{
+color: rgb(58, 58, 228);
+text-decoration: none;
+}
+
+@media (min-width:800px) {
+.header-tab{
+width: 100%;
+position: relative;
+}
+}
+.home-link{
+left: 1.25rem;
+top: 0.9375rem;
+width: -webkit-fit-content;
+width: -moz-fit-content;
+width: fit-content;
+height: -webkit-fit-content;
+height: -moz-fit-content;
+height: fit-content;
+padding: 0.625rem;
+background-color: #e7cabb70;
+}
+
+
+.home-link > a{
+color: #d14d4d;
+border: #feb692;
+}
+
+/*User profile section*/
+.user-profile{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+ position: absolute;
+ right: 2.25rem;
+ top: 0.9375rem;
+}
+
+profile-img{
+width: 0.9375rem;
+height: 0.9375rem;
+border-radius: 0.125rem;
+}
+
+#user-name{
+font-family: 'Courier New', Courier, monospace;
+font-size: medium;
+-ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+/*Explore More courses button for home and My courses for userhomepage Button part*/
+.btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: "Dosis", sans-serif;
+}
+
+/*Button part*/
+.btn {
+  padding: 1rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  border-radius: 3.125rem;
+  background-image: -o-linear-gradient(315deg, #feb692 0%, #ea5455 100%);
+  background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+  -webkit-box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+          box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 0.75rem;
+  color: white;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
+/*Tag line*/
+.tag-line{
+  padding: 1.25rem;
+}
+
+h2{
+  color: white;
+  font-size: 2.1875rem;
+}
+
+/*Exploer course button*/
+.course-btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  border: 0.1875rem solid rgb(252, 70, 100);
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+ }
+ 
+ .course-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(252, 70, 100);
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  z-index: -1;
+ }
+ 
+ .course-btn:hover::before {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+ }
+
+ /*fetures-tab*/
+
+
+
+/*change it for the small deices and other things are fixed*/
+@media screen and(min-width: 601px) {
+  .features-tab{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    background-color: white;
+    width: auto;
+    position: relative;
+    top: 10%;
+    margin-bottom: 1.25rem;
+   }
+   
+   .ft{
+    padding: 1.5625rem;
+    flex-shrink: 2;
+   }
+  
+}
+
+
+
+ @media screen and(max-width: 600px) {
+  .features-tab{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 60%;
+    background-color: white;
+    position: relative;
+    top: 10%;
+    margin-bottom: 1.25rem;
+  }
+
+
+  
+ }
+
+
+/*Courses display tab or Carousel of Courses*/
+
+/* 
+body {
+height: 600px;
+margin: 0;
+display: grid;
+grid-template-rows: 500px 100px;
+grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+align-items: center;
+justify-items: center;
+}
+*/
+
+/*Courses tab*/
+
+main#carousel {
+-ms-grid-row: 1;
+-ms-grid-row-span: 1;
+grid-row: 1 / 2;
+-ms-grid-column: 1;
+-ms-grid-column-span: 7;
+grid-column: 1 / 8;
+width: auto;
+height: 80vh;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+overflow: hidden;
+-webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+-webkit-perspective: 37.5rem;
+        perspective: 37.5rem;
+--items: 5;
+--middle: 3;
+--position: 1;
+pointer-events: none;
+}
+
+div.c1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2rem;
+}
+
+div.c1 h4{
+  font-size: 2.5rem;
+  
+}
+
+div.c1 p{
+ font-family: 'Times New Roman', Times, serif;
+ display: flex;
+}
+
+
+
+/*Part of Carousel*/
+div.item {
+position: absolute;
+width: 18.75rem;
+height: 25rem;
+background-color: coral;
+--r: calc(var(--position) - var(--offset));
+--abs: max(calc(var(--r) * -1), var(--r));
+-webkit-transition: all 0.25s linear;
+-o-transition: all 0.25s linear;
+transition: all 0.25s linear;
+-webkit-transform: rotateY(calc(-10deg * var(--r)))
+  translateX(calc(-18.75rem * var(--r)));
+        transform: rotateY(calc(-10deg * var(--r)))
+  translateX(calc(-18.75rem * var(--r)));
+z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item:nth-of-type(1) {
+--offset: 1;
+background-color: #90f1ef;
+}
+div.item:nth-of-type(2) {
+--offset: 2;
+background-color: #ff70a6;
+}
+div.item:nth-of-type(3) {
+--offset: 3;
+background-color: #ff9770;
+}
+div.item:nth-of-type(4) {
+--offset: 4;
+background-color: #ffd670;
+}
+div.item:nth-of-type(5) {
+--offset: 5;
+background-color: #e9ff70;
+}
+
+input:nth-of-type(1) {
+-ms-grid-column: 2;
+-ms-grid-column-span: 1;
+grid-column: 2 / 3;
+-ms-grid-row: 2;
+-ms-grid-row-span: 1;
+grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ main#carousel {
+--position: 1;
+}
+
+input:nth-of-type(2) {
+-ms-grid-column: 3;
+-ms-grid-column-span: 1;
+grid-column: 3 / 4;
+-ms-grid-row: 2;
+-ms-grid-row-span: 1;
+grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+--position: 2;
+}
+
+input:nth-of-type(3) {
+-ms-grid-column: 4;
+-ms-grid-column-span: 1;
+grid-column: 4 /5;
+-ms-grid-row: 2;
+-ms-grid-row-span: 1;
+grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+--position: 3;
+}
+
+input:nth-of-type(4) {
+-ms-grid-column: 5;
+-ms-grid-column-span: 1;
+grid-column: 5 / 6;
+-ms-grid-row: 2;
+-ms-grid-row-span: 1;
+grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ main#carousel {
+--position: 4;
+}
+
+input:nth-of-type(5) {
+-ms-grid-column: 6;
+-ms-grid-column-span: 1;
+grid-column: 6 / 7;
+-ms-grid-row: 2;
+-ms-grid-row-span: 1;
+grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ main#carousel {
+--position: 5;
+}
+
+
+
+
+
+
+
+/*
+body{
+    max-width: 100%;
+} 
+
+.home-link, a:link{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: rgb(206, 101, 15);
+    text-align: center;
+    text-decoration: none;
+}
+
+.home-link{
+    padding: 15px;
+    background-color: rgba(rgb(212, 60, 60), rgb(0, 0, 0), rgb(0, 0, 0), 0.8);
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.quote{
+    color: aliceblue;
+     padding-top: 10%; 
+     padding-bottom: 10%;
+     padding-right: 10%;
+     padding-left: 20px;
+     font-size: 30px;
+}
+.header-tab{
+    color: aquamarine;
+    background-color: none;
+    display: flex;
+}
+
+.header-tab > .menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 500px;
+    margin: 0.5% auto;
+}
+
+.ud{
+    margin: 0.5% auto;
+    padding: 5%;
+    width: 10%;
+}
+
+.course-button{
+    padding: 5px;
+    margin: 0.5%;
+    color: aliceblue;
+    background-color: rgb(212, 127, 127);
+    background-blend-mode: lighten;
+}
+
+.features-plate, p{
+    display: flex;
+    background-color: aliceblue;
+    width: 30%;
+    margin: 10px;
+}

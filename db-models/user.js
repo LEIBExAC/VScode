@@ -7,7 +7,7 @@ const UserSchema = new Schema({
     username: {
         type: String,
         required: true,
-        minLength: 7,
+        minLength: 4,
         kMaxLength: 13,
     },
     email: {
@@ -23,7 +23,7 @@ const UserSchema = new Schema({
 });
 
 UserSchema.virtual('url').get(function() {
-    return '/users/' + this._id;
+    return '/home/' + this._id;
 });
 
-module.exports = mongoose.model('User', UserSchema);
+module.exports = mongoose.model('user', UserSchema);

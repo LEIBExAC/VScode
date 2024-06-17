@@ -1,0 +1,42 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Login2 page
+  link(rel='stylesheet' href='/stylesheets/login.css')
+section.page
+  #page
+    .part1
+      #content
+        h1
+          | UNIQUE 
+          br
+          |  LEARNING
+        h2 THRIVE TO LEARN
+        p
+          | A LEARNING PLATFORM TO STUDENTS 
+          br
+          |  BY STUDENTS
+    .part2
+      #details
+        .btn-box
+          #btn
+          button.toggle(type='button' onclick='signin()') SIGN IN
+          button.toggle(type='button' onclick='signup()') SIGN UP
+        .info
+          form#signin.info-group
+            input#input-field(type='email' name='email' placeholder='Email Address')
+            input#input-field(type='password' name='password' placeholder='Password')
+            button#submit(type='submit')
+              a#login(href='/login-page/login.html')
+              | SIGN IN
+          form#signup.info-group(method='POST')
+            input#input-field(type='text' placeholder='Username' required name='username' value=(undefined===user ? '' : user.username))
+            input#input-field(type='email' name='email' placeholder='Email Address' required value=(undefined===user ? '' : user.email))
+            input#input-field(type='password' name='password' placeholder='Password' required value=(undefined===user ? '' : user.password))
+            button#submit(type='submit') SIGN UP
+  if errors
+    ul
+      for error in errors
+        li!= error.msg
+script(src='javascripts//login.js' async)
